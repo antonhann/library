@@ -1,0 +1,20 @@
+*{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+button{
+    border-color: white;
+}
+.collection{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    padding: 30px;
+    border: 1px solid white;
+}
