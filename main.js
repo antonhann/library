@@ -6,8 +6,15 @@ function Book(t,a,p,r){
     this.pages = p
     this.read = r
 }
-
+var submit = document.querySelector('.display')
+var form = document.querySelector('.popup')
+submit.addEventListener('click', () => {    
+    form.style.display = 'block'
+    submit.style.display = 'none'
+});
 function addBook(){
+    form.style.display = 'none'
+    submit.style.display = 'block'
     var a = document.querySelector('#title').value
     var b = document.querySelector('#author').value
     var c = document.querySelector('#page').value

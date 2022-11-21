@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = 'stylesheet' href = 'style.css'>
-    <title>Document</title>
+    <title>LIBRARY</title>
 </head>
 <body>
     <h1>YOUR LIBRARY</h1>
-    <form action = 'javascript:addBook()'method="POST">
-        <input type = 'text' placeholder="TITLE" id = 'title'>
-        <input type = 'text' placeholder="AUTHOR" id = 'author'>
-        <input type = 'number' placeholder="page" id = 'page'>
-        <label>Read?</label><input type = 'checkbox' id = 'read'>
-        <button type = 'submit'>+ ADD BOOK</button>
-    </form>
+    <div class = 'popup'>
+        <form action = 'javascript:addBook()'method="POST">
+            <input class = 'fill' type = 'text' placeholder="TITLE" id = 'title'>
+            <input class = 'fill' type = 'text' placeholder="AUTHOR" id = 'author'>
+            <input class = 'fill' type = 'number' placeholder="page" id = 'page'>
+            <div class = 'fill checkbox'><p>Read?</p><input type = 'checkbox' id = 'read'></div>
+            <button type = 'submit'>+ ADD BOOK</button>
+        </form>
+    </div>
+    <button type = 'button' class = 'display'>WANT TO ADD A BOOK?</button>
     <div class = 'collection'>
     </div>
     <script src = 'main.js'></script>
