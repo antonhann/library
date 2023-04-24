@@ -1,0 +1,55 @@
+*{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border-color: white;
+}
+.collection{
+    padding: 30px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card{
+    padding: 30px;
+    border: 1px solid white;
+}
+.popup{
+    display: none;
+}
+.popup form{
+    background-color: gray;
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fill{
+    height: 50px;
+    width: 300px;
+}
+button{
+    height: 50px;
+    width: 300px;
+}
