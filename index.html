@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' type="text/css" href = "/css/style.css">
+    <script type="module" src="./file.js"></script>
+    <title>LIBRARY</title>
+</head>
+<body>
+    <h1>YOUR LIBRARY</h1>
+    <div class = 'popup'>
+        <form action = 'javascript:addBook()'method="POST">
+            <input class = 'fill' type = 'text' placeholder="TITLE" id = 'title'>
+            <input class = 'fill' type = 'text' placeholder="AUTHOR" id = 'author'>
+            <input class = 'fill' type = 'number' placeholder="page" id = 'page'>
+            <div class = 'fill checkbox'><p>Read?</p><input type = 'checkbox' id = 'read'></div>
+            <button type = 'submit'>+ ADD BOOK</button>
+        </form>
+    </div>
+    <button type = 'button' class = 'display'>WANT TO ADD A BOOK?</button>
+    <div class = 'collection'>
+    </div>
+    <script src = '/js/main.js'></script>
+</body>
+</html>
